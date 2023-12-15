@@ -37,9 +37,9 @@ public class PSNplayers extends javax.swing.JFrame {
       private void loadUsers() {
         active = false;
         users = psn.users.entry;
-        usersCombo.removeAllItems();
+//        usersCombo.removeAllItems();
 
-        while (users == null) {
+        while (users != null) {
             System.out.println("entra ");
             usersCombo.addItem(users.username);
             users = users.siguiente;
@@ -278,7 +278,7 @@ public class PSNplayers extends javax.swing.JFrame {
             }
         });
 
-        usersCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "jeff", "Item 2", "Item 3", "Item 4" }));
+        usersCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "jeff", "jefff ", "jjyy ", "87" }));
         usersCombo.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 usersComboItemStateChanged(evt);
